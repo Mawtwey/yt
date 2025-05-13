@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>80 лет победы</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&family=Ruslan+Display&display=swap" rel="stylesheet">
+		<link type="image/x-icon" href="img/fav.ico" rel="shortcut icon">
+		<link type="Image/x-icon" href="img/fav.ico" rel="icon">
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<header>
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="logo">
+                <img src="img/logo.svg" alt="logo">
+            </a>
+            <h1>80 лет победы</h1>
+            <div class="menu">
+                <img src="img/Menu.svg" alt="menu">
+            </div>
+        </div>
+    </div>
+</header>
+<div class="mobile-nav">
+	<ul class="mobile-nav__list">
+		<li><a href="#" class="active">Home</a></li>
+		<li><a href="#!">Services</a></li>
+		<li><a href="#!">About</a></li>
+		<li><a href="#!">Projects</a></li>
+		<li><a href="#!">Contact</a></li>
+	</ul>
+</div>
+
+		<section>
+			<div class="container">
+				<div class="firstDay">
+                    <h2 class="title">Первые дни войны</h2>
+					<div class="firstDay__theme">
+						<a href="belarus.html">
+						<div class="item">
+							<img src="img/item1.png" alt="item1">
+							<h3>“Захват Беларуси”</h3>
+							<p>Белрусские земли держали оборону 8 дней, вместо 8 часов, планируемых немцами.</p>
+							<span>Подробнее..</span>
+						</div>
+						</a>
+						<a href="war.html">
+						<div class="item u">
+							<img src="img/item2.png" alt="item2">
+							<h3>“Оборона Брестской крепости”</h3>
+							<p>Оборона Брестской крепости продолжалась около месяца</p>
+							<span>Подробнее..</span>
+						</div>
+						</a>
+						<a href="start.html">
+						<div class="item o">
+							<img src="img/item3.png" alt="item3">
+							<h3>“Начало ВОВ”</h3>
+							<p>22 июня 1941 года фашистская Германия напала на Советский Союз</p>
+							<span>Подробнее..</span>
+						</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="art">
+			<div class="container">
+					<h2 class="title">Искусство Вов</h2>
+					<div class="art__theme">
+						<a href="lit.html">
+						<div class="item">
+							<img src="img/book.png" alt="book">
+							<h3 class="y">“Литература ВОВ”</h3>
+							<p>ВОВ сильно повлияла на литературу того времени</p>
+							<span>Подробнее..</span>
+						</div>
+						</a>
+						<a href="art.html">
+						<div class="item nyt">
+							<img src="img/gallery.png" alt="gallery">
+							<h3 class="k n">"Искусство ВОВ”</h3>
+							<p>Во время ВОВ было сделано множество иллюстрация</p>
+							<span>Подробнее..</span>
+						</div>
+						</a>
+						<a href="kino.html">
+						<div class="item v">
+							<img src="img/kino.png" alt="kino">
+							<h3>“Кинимотограф ВОВ”</h3>
+							<p>Было сделано множество фильмов о ВОВ</p>
+							<span>Подробнее..</span>
+						</div>
+						</a>
+					</div>
+			</div>
+		</section>
+		<footer>
+	<div class="container">
+		<div class="footer">
+		<div class="contact">
+		<a href="https://sc54gomel.by/" class="school">
+            <img src="img/school.svg" alt="school">
+        </a>
+		<a href="https://github.com/">
+			<img src="img/git.svg" alt="github">
+		</a>
+		</div>
+        <h2>80 лет победы</h2>
+		<p>Источники</p>
+		</div>
+	</div>
+</footer>
+
+		<div class="modal">
+			<div class="modal__all">
+				<h3>меню:</h3>
+				<ul>
+					<li>I. Первые дни войны:</li>
+					<li><a href="belarus.html">1.Захват Беларуси</a></li>
+					<li><a href="war.html">2.Оборона Брестской крепости</a></li>
+					<li><a href="start.html">3.Начало ВОВ</a></li>
+				</ul>
+				<ul>
+					<li>II. Первые дни войны:</li>
+					<li><a href="lit.html">1.Художественная литература</a></li>
+					<li><a href="art.html">2.Изобразительное искусство ВОВ</a></li>
+					<li><a href="kino.html">3.Кинематограф о ВОВ</a></li>
+				</ul>
+				<div class="close"><img src="img/close.svg" alt="close"></div>
+			</div>
+		</div>
+		<script src="./js/index.bundle.js"></script>
+		<script>
+			const menu = document.querySelector('.menu'),
+			modal = document.querySelector('.modal'),
+			close = document.querySelector('.close');
+
+			menu.addEventListener('click', ()=>{
+				modal.style.display = 'block';
+			})
+			close.addEventListener('click', ()=>{
+			modal.style.display = 'none';
+		})
+		modal.addEventListener('click', (event)=>{
+    if(event.target === modal){
+			modal.style.display = 'none';
+	}
+})
+document.addEventListener('keydown', (event)=>{
+    if(event.code === 'Escape'){
+        	modal.style.display = 'none';
+    }
+})
+
+		</script>
+	</body>
+</html>
